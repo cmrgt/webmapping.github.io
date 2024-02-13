@@ -1,0 +1,250 @@
+
+#map {height: 500px;}
+
+.legend {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 5px;
+    }
+
+.hide {display: none;}
+
+.toggle-legend {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    }
+    
+body {
+    background-color: #1c1d1c;
+    font-family: system-ui;
+    }
+
+/* ----------- SECTION COUVERTURE ----------- */
+
+.logo1{
+    left: 4%;
+    position: absolute;
+    top: 4%;
+    width : 200px;
+}
+
+.logo2{
+    left: 40%;
+    position: absolute;
+    top: 4%;
+    width : 200px;
+}
+
+.logo3{
+    left: 76%;
+    position: absolute;
+    top: 4%;
+    width : 270px;
+}
+
+.banner-text {
+    background-color: #1c1d1c; 
+    border: 2px solid rgb(237, 237, 237);
+    box-shadow:#02553c 1px 1.5px 0, #00ff88 2.5px 2.5px 0, #0d8911 4.5px 4.5px 0,#91ff00 6.5px 6.5px 0px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 1px 0px #0d8911;  
+}
+
+.banner-text h2 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* ----------- SECTION DESCRIPTION ----------- */
+
+.toggle-descrip {
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: -19%;
+    border: 1px solid rgba(0,0,0,0.5); 
+    border-radius: 5px; 
+    box-shadow:#02553c 1px 1.5px 0, #00ff88 2.5px 2.5px 0;
+    color: #012511; 
+    cursor: pointer; 
+    font-size: 11px; 
+    left : 50%;
+    padding: 2.5px 5px;
+    position: absolute;
+    transform: translateX(-50%); 
+    z-index: 9999;
+}
+
+#description {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+#description h2 {
+    color:rgba(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-shadow:#02553c 2px 2px 0, #00ff88 3px 3px 0, #0d8911 5px 5px 0,#91ff00 7px 7px 0px;
+}
+
+#description h3 {
+    color:rgba(255, 255, 255);
+    font-size: 15px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/* ----------- Image nomenclature ----------- */
+
+.image-nom {
+    background-color: rgb(255, 252, 252); 
+    border: 2px solid #9fc5a2c5; 
+    border-radius: 10px;
+    color: #1c1d1c;
+    height: auto;
+    margin: 20px auto; 
+    overflow: hidden;
+    padding: 10px; 
+    position: relative;
+    transition: transform 0.3s ease; 
+    width: 65%; 
+}
+
+/* Effet de zoom au survol */
+.image-nom:hover img {
+    transform: scale(1.1);
+}
+
+.image-nom img {
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    width: 100%; 
+}
+
+/* ----------- Image matrice de confusion ----------- */
+
+.image-mc {
+    background-color: rgb(255, 252, 252); 
+    border: 2px solid #9fc5a2c5; 
+    border-radius: 10px;
+    color: #1c1d1c;
+    height: auto;
+    margin: 20px auto; 
+    overflow: hidden;
+    padding: 10px; 
+    position: relative;
+    transition: transform 0.3s ease; 
+    width: 45%; 
+}
+
+/* Styles pour les images */
+.image-mc img { 
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* Styles pour chaque image */
+.image-mc:hover .overlay {
+    opacity: 1; 
+}
+
+/* Styles pour la superposition */
+.overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0; 
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.3s ease; 
+    width: 100%;
+}
+
+/* ----------- légende des images ----------- */
+.image-leg {
+    color:rgba(255, 255, 255);
+    font-family: monospace;
+    font-size: 12px;
+    margin-top: -15px;
+    text-align: center;
+}
+
+/* ----------- SECTION LEGENDE ----------- */
+
+.legend {
+    background-color: rgba(0,0,0,0.5); 
+    color: white; 
+}
+
+.legend-color {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+.AFP { background-color: #edfac2; }
+.CP { background-color: #2b9b2b; }
+.RP { background-color: #99f0b2; }
+.MF { background-color: #53bd9f; }
+.P { background-color: #3296b4; }
+.ACPAP { background-color: #7c9db0; }
+.DP { background-color: #065b9c; }
+.PLPNP { background-color: #0e2dd8; }
+.APP { background-color: #2c0246; }
+.MPAC { background-color: #6a2c5a; }
+
+/* ----------- PDF ----------- */
+
+.pdf a{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0,0,0,0.5); 
+    border-radius: 5px; 
+    box-shadow:#02553c 1px 1.5px 0, #00ff88 2.5px 2.5px 0;
+    color: #012511; 
+    cursor: pointer; 
+    font-size: 11px; 
+    left: 38%;
+    padding: 2.5px 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+}
+
+.droit{
+    font-size: 8px; 
+    left : 50%;
+    margin-top: 20px;
+    padding: 2.5px 5px;
+    position: relative;
+    text-align: center;
+    transform: translateX(-50%); 
+}
